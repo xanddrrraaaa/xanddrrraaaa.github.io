@@ -1,0 +1,31 @@
+<head>
+	<title>Tip Calculator</title>
+</head>
+<body>
+<center>
+  <form>
+
+  <h1>Tip Calculator</h1>
+  <form>
+<p id="amount-error-message"></p>
+    <label for="amount">Enter service-amount:</label><br><br>
+    <input type="text" id="amount" placeholder="Enter service amount"  min="5.00" max="500.00" required><br><br>
+    <label>How was the service?</label><br>
+    <input type="radio" id="great" name="quality" value="great" required>
+    <label for="great">Great (20% tip)</label>
+    <input type="radio" id="ok" name="quality" value="ok">
+    <label for="ok">OK (15% tip)</label>
+    <input type="radio" id="poor" name="quality" value="poor">
+    <label for="poor">Poor (10% tip)</label><br>
+    <p> Click to button for the total amount </p>
+    <input type="button" value="Calculate Tip" onclick="displayTip()">
+  </form>
+  <p id="result"></p>
+
+    <script src="module4HW.js"></script>
+
+    <a href ="..index.html">Return to home page</a>
+  </form>
+  </center>
+</body>
+</html>
