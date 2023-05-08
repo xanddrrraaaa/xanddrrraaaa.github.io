@@ -36,7 +36,7 @@ myGreeting()
         let talkString = "";
 
         if (this.canTalk)
-         talkString = " big voice";
+         talkString = " I can talk";
         else
          talkString= "I cannot talk.";
  
