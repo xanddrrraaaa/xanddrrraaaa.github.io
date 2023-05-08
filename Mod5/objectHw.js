@@ -35,7 +35,7 @@ myGreeting()
 {
         let talkString = "";
 
-        if (this.canTalk)
+        if (this.canTalk == true)
          talkString = " I can talk";
         else
          talkString= "I cannot talk.";
@@ -48,10 +48,10 @@ myGreeting()
 };
 
 //Create an object method called myGreeting (a method is a function stored in an object) as one of the properties. 
-const myDogConst = new Dog("Clifford", "Labrador Retrieverr","Clifford the Big Red Dog","I sound very intimidating because of my","a giant dog that gets in constant trouble oh silly me!. ","I have a ", true)
+const myDogConst = new Dog("Clifford", "Labrador Retrieverr","Clifford the Big Red Dog","I sound very intimidating because of my","a giant dog that gets in constant trouble oh silly me!. ","I have a ",false)
 
 // Display dog properties on page
-const message = `hello Im ${myDogConst.name} and my i am a ${myDogConst.breed}  you probably saw me from ${myDogConst.tvShow} who is ${myDogConst.note} I may be scary because  ${myDogConst.sound}.`;
+const message = `hello Im ${myDogConst.name} and my i am a ${myDogConst.breed}  you probably saw me from ${myDogConst.tvShow} who is ${myDogConst.note} I may be scary because  ${myDogConst.mysound}.`;
 document.getElementById("newdog").innerHTML = message;
 
 // Display dog greeting on page
